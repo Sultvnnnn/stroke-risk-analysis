@@ -7,7 +7,12 @@ pasien stroke dari yang bukan — dan mana yang hanya terlihat membedakan.
 
 **Stack:** Python · pandas · NumPy · Matplotlib · Seaborn · Jupyter · kagglehub
 **Dataset:** [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset) (Kaggle, `fedesoriano/stroke-prediction-dataset`)
-**Berkas utama:** [`notebooks/stroke_risk_profiling_eda.ipynb`](notebooks/stroke_risk_profiling_eda.ipynb) · [`reports/Analisis_Faktor_Risiko_Stroke_Report.pdf`](reports/Analisis_Faktor_Risiko_Stroke_Report.pdf)
+**Berkas utama:** [`notebooks/stroke_risk_profiling_eda.ipynb`](notebooks/stroke_risk_profiling_eda.ipynb) (versi portofolio, Inggris) · [`notebooks/stroke_risk_profiling_eda_original.ipynb`](notebooks/stroke_risk_profiling_eda_original.ipynb) (versi asli, Indonesia) · [`reports/Analisis_Faktor_Risiko_Stroke_Report.pdf`](reports/Analisis_Faktor_Risiko_Stroke_Report.pdf)
+
+> **Dua versi notebook.** `stroke_risk_profiling_eda_original.ipynb` adalah naskah tugas akademik yang
+> tidak diubah (bahasa Indonesia, redaksi asli). `stroke_risk_profiling_eda.ipynb` adalah analisis yang
+> sama, ditulis ulang dalam bahasa Inggris untuk portofolio. Logika kode identik di keduanya; yang
+> berbeda hanya teks naratif dan label grafik.
 
 ---
 
@@ -77,14 +82,15 @@ akurasi 95%.
 ```
 stroke-risk-analysis/
 ├── notebooks/
-│   └── stroke_risk_profiling_eda.ipynb   # profiling → cleaning → EDA → temuan
+│   ├── stroke_risk_profiling_eda.ipynb           # versi portofolio (Inggris)
+│   └── stroke_risk_profiling_eda_original.ipynb  # versi asli (Indonesia)
 ├── reports/
 │   ├── Analisis_Faktor_Risiko_Stroke_Report.pdf
-│   └── figures/                          # grafik EDA (1-4)
+│   └── figures/                                  # grafik EDA (1-4)
 ├── requirements.txt
 ├── .gitignore
-├── README.md                             # English
-└── README.id.md                          # Bahasa Indonesia
+├── README.md                                     # English
+└── README.id.md                                  # Bahasa Indonesia
 ```
 
 Tidak ada berkas dataset yang di-commit: notebook mengunduh data secara otomatis lewat `kagglehub`.

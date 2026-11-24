@@ -7,7 +7,12 @@ from non-cases — and which ones only look like they do.
 
 **Stack:** Python · pandas · NumPy · Matplotlib · Seaborn · Jupyter · kagglehub
 **Dataset:** [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset) (Kaggle, `fedesoriano/stroke-prediction-dataset`)
-**Deliverables:** [`notebooks/stroke_risk_profiling_eda.ipynb`](notebooks/stroke_risk_profiling_eda.ipynb) · [`reports/Analisis_Faktor_Risiko_Stroke_Report.pdf`](reports/Analisis_Faktor_Risiko_Stroke_Report.pdf)
+**Deliverables:** [`notebooks/stroke_risk_profiling_eda.ipynb`](notebooks/stroke_risk_profiling_eda.ipynb) (English portfolio version) · [`notebooks/stroke_risk_profiling_eda_original.ipynb`](notebooks/stroke_risk_profiling_eda_original.ipynb) (Bahasa Indonesia, original) · [`reports/Analisis_Faktor_Risiko_Stroke_Report.pdf`](reports/Analisis_Faktor_Risiko_Stroke_Report.pdf)
+
+> **Two notebook versions.** `stroke_risk_profiling_eda_original.ipynb` is the unchanged academic
+> submission (Bahasa Indonesia, original wording). `stroke_risk_profiling_eda.ipynb` is the same analysis
+> rewritten in English for portfolio use. Code logic is identical in both; only narrative text and
+> chart labels differ.
 
 ---
 
@@ -77,14 +82,15 @@ model must be evaluated on recall / PR-AUC rather than accuracy — a majority-c
 ```
 stroke-risk-analysis/
 ├── notebooks/
-│   └── stroke_risk_profiling_eda.ipynb   # profiling → cleaning → EDA → findings
+│   ├── stroke_risk_profiling_eda.ipynb           # English, portfolio version
+│   └── stroke_risk_profiling_eda_original.ipynb  # Bahasa Indonesia, original submission
 ├── reports/
 │   ├── Analisis_Faktor_Risiko_Stroke_Report.pdf
-│   └── figures/                          # EDA charts (1-4)
+│   └── figures/                                  # EDA charts (1-4)
 ├── requirements.txt
 ├── .gitignore
-├── README.md                             # English
-└── README.id.md                          # Bahasa Indonesia
+├── README.md                                     # English
+└── README.id.md                                  # Bahasa Indonesia
 ```
 
 No dataset files are committed: the notebook downloads the data at runtime through `kagglehub`.
