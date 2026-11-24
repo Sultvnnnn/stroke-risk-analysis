@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.pytest_cache/
+*.nbconvert.ipynb
+
+# Environment / secrets
+.env
+.env.*
+
+# Local data — the dataset is pulled automatically via kagglehub
+data/
+*.csv
+!reports/figures/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
