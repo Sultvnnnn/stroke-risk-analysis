@@ -2,6 +2,8 @@
 
 [English](README.md) | [Bahasa Indonesia](README.id.md)
 
+---
+
 Analisis eksploratif atas 5.109 rekam pasien untuk menemukan atribut mana yang benar-benar membedakan
 pasien stroke dari yang bukan — dan mana yang hanya terlihat membedakan.
 
@@ -151,3 +153,14 @@ Langkah lanjutan dari analisis deskriptif menuju **predictive modeling**:
 ---
 
 **Penulis:** Sultan Abdul Fatah — [@Sultvnnnn](https://github.com/Sultvnnnn)
+
+---
+
+## Sumber Data
+
+**Stroke Prediction Dataset** — [kaggle.com/datasets/fedesoriano/stroke-prediction-dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
+
+Diterbitkan oleh **fedesoriano** di Kaggle. 5.110 baris × 12 kolom, satu baris mewakili satu pasien,
+berupa data sintetis yang diturunkan dari dataset stroke asli. Data dimuat secara programatik melalui
+`kagglehub`, sehingga tidak ada berkas dataset yang didistribusikan ulang di repositori ini. Seluruh
+kredit data menjadi milik penerbit aslinya; repositori ini hanya memuat analisis di atasnya.

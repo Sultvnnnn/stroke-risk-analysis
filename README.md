@@ -2,6 +2,8 @@
 
 [English](README.md) | [Bahasa Indonesia](README.id.md)
 
+---
+
 Exploratory analysis of 5,109 patient records to find which attributes actually separate stroke cases
 from non-cases — and which ones only look like they do.
 
@@ -149,3 +151,14 @@ Planned progression from descriptive analysis to **predictive modeling**:
 ---
 
 **Author:** Sultan Abdul Fatah — [@Sultvnnnn](https://github.com/Sultvnnnn)
+
+---
+
+## Data Source
+
+**Stroke Prediction Dataset** — [kaggle.com/datasets/fedesoriano/stroke-prediction-dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
+
+Published by **fedesoriano** on Kaggle. 5,110 rows × 12 columns, one row per patient, synthetic
+data derived from the original stroke dataset. Loaded programmatically via `kagglehub`, so no
+dataset file is redistributed in this repository. All credit for the data belongs to the original
+publisher; this repository only contains the analysis built on top of it.
