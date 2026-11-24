@@ -7,12 +7,11 @@ from non-cases — and which ones only look like they do.
 
 **Stack:** Python · pandas · NumPy · Matplotlib · Seaborn · Jupyter · kagglehub
 **Dataset:** [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset) (Kaggle, `fedesoriano/stroke-prediction-dataset`)
-**Deliverables:** [`notebooks/stroke_risk_profiling_eda.ipynb`](notebooks/stroke_risk_profiling_eda.ipynb) (English portfolio version) · [`notebooks/stroke_risk_profiling_eda_original.ipynb`](notebooks/stroke_risk_profiling_eda_original.ipynb) (Bahasa Indonesia, original) · [`reports/Analisis_Faktor_Risiko_Stroke_Report.pdf`](reports/Analisis_Faktor_Risiko_Stroke_Report.pdf)
+**Deliverables:** [`notebooks/stroke_risk_profiling_eda.ipynb`](notebooks/stroke_risk_profiling_eda.ipynb) (English) · [`notebooks/stroke_risk_profiling_eda_original.ipynb`](notebooks/stroke_risk_profiling_eda_original.ipynb) (Bahasa Indonesia, first submission) · [`reports/Analisis_Faktor_Risiko_Stroke_Report.pdf`](reports/Analisis_Faktor_Risiko_Stroke_Report.pdf)
 
-> **Two notebook versions.** `stroke_risk_profiling_eda_original.ipynb` is the unchanged academic
-> submission (Bahasa Indonesia, original wording). `stroke_risk_profiling_eda.ipynb` is the same analysis
-> rewritten in English for portfolio use. Code logic is identical in both; only narrative text and
-> chart labels differ.
+> **Two notebook versions.** `stroke_risk_profiling_eda_original.ipynb` is the first submission of this
+> analysis (Bahasa Indonesia, original wording). `stroke_risk_profiling_eda.ipynb` is the same analysis
+> rewritten in English. Code logic is identical in both; only narrative text and chart labels differ.
 
 ---
 
@@ -32,6 +31,23 @@ screening, education, and preventive follow-up for the most vulnerable groups.
 teams (prevention programs).
 
 **Target variable:** `stroke` (binary — 1 = patient had a stroke, 0 = did not).
+
+### Project Origin
+
+This analysis began as a coursework assignment on exploratory data analysis and was extended afterwards
+into a full project:
+
+- Every cleaning decision was turned into an auditable log with row counts before and after, instead of
+  being applied silently.
+- Missing BMI was treated as an informative signal rather than dropped — the missingness itself carries
+  a 19.90% stroke rate, so it became a feature (`bmi_is_missing`) instead of a deletion.
+- The smoking finding was tested against age as a confounder before any conclusion was drawn, which
+  changed the interpretation entirely.
+- A concrete path to predictive modeling was defined, including how class imbalance will be handled.
+
+The original submission is preserved unchanged in
+[`notebooks/stroke_risk_profiling_eda_original.ipynb`](notebooks/stroke_risk_profiling_eda_original.ipynb)
+so the starting point and the added work can be compared directly.
 
 ---
 

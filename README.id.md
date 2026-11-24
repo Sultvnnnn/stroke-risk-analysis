@@ -7,12 +7,12 @@ pasien stroke dari yang bukan — dan mana yang hanya terlihat membedakan.
 
 **Stack:** Python · pandas · NumPy · Matplotlib · Seaborn · Jupyter · kagglehub
 **Dataset:** [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset) (Kaggle, `fedesoriano/stroke-prediction-dataset`)
-**Berkas utama:** [`notebooks/stroke_risk_profiling_eda.ipynb`](notebooks/stroke_risk_profiling_eda.ipynb) (versi portofolio, Inggris) · [`notebooks/stroke_risk_profiling_eda_original.ipynb`](notebooks/stroke_risk_profiling_eda_original.ipynb) (versi asli, Indonesia) · [`reports/Analisis_Faktor_Risiko_Stroke_Report.pdf`](reports/Analisis_Faktor_Risiko_Stroke_Report.pdf)
+**Berkas utama:** [`notebooks/stroke_risk_profiling_eda.ipynb`](notebooks/stroke_risk_profiling_eda.ipynb) (Inggris) · [`notebooks/stroke_risk_profiling_eda_original.ipynb`](notebooks/stroke_risk_profiling_eda_original.ipynb) (Indonesia, naskah pertama) · [`reports/Analisis_Faktor_Risiko_Stroke_Report.pdf`](reports/Analisis_Faktor_Risiko_Stroke_Report.pdf)
 
-> **Dua versi notebook.** `stroke_risk_profiling_eda_original.ipynb` adalah naskah tugas akademik yang
-> tidak diubah (bahasa Indonesia, redaksi asli). `stroke_risk_profiling_eda.ipynb` adalah analisis yang
-> sama, ditulis ulang dalam bahasa Inggris untuk portofolio. Logika kode identik di keduanya; yang
-> berbeda hanya teks naratif dan label grafik.
+> **Dua versi notebook.** `stroke_risk_profiling_eda_original.ipynb` adalah naskah pertama analisis ini
+> (bahasa Indonesia, redaksi asli). `stroke_risk_profiling_eda.ipynb` adalah analisis yang sama, ditulis
+> ulang dalam bahasa Inggris. Logika kode identik di keduanya; yang berbeda hanya teks naratif dan label
+> grafik.
 
 ---
 
@@ -32,6 +32,24 @@ program skrining, edukasi, dan pemantauan preventif pada kelompok paling rentan.
 asuransi kesehatan (program preventif).
 
 **Target analisis:** kolom `stroke` (biner — 1 = pasien mengalami stroke, 0 = tidak).
+
+### Asal Proyek
+
+Analisis ini bermula dari tugas kuliah eksplorasi data, lalu dikembangkan lebih lanjut menjadi proyek
+utuh:
+
+- Setiap keputusan pembersihan diubah menjadi log yang dapat diaudit, lengkap dengan jumlah baris
+  sebelum dan sesudah, bukan diterapkan tanpa jejak.
+- Missing value pada BMI diperlakukan sebagai sinyal informatif, bukan dibuang — kelompok BMI kosong
+  memiliki stroke rate 19,90%, sehingga ketidaktersediaan data itu sendiri menjadi fitur
+  (`bmi_is_missing`) alih-alih alasan menghapus baris.
+- Temuan status merokok diuji lebih dulu terhadap usia sebagai variabel perancu sebelum ditarik
+  kesimpulan, dan hasil uji itu mengubah interpretasinya sepenuhnya.
+- Jalur menuju predictive modeling dirancang konkret, termasuk cara menangani class imbalance.
+
+Naskah pertama disimpan apa adanya di
+[`notebooks/stroke_risk_profiling_eda_original.ipynb`](notebooks/stroke_risk_profiling_eda_original.ipynb)
+agar titik awal dan pekerjaan tambahannya dapat dibandingkan langsung.
 
 ---
 
